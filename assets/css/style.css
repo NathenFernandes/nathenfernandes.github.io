@@ -1,71 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
 
-:root{
-    --color-body: #7dae93;
-    --color-heading: #eef3db;
-    --color-base: #1b3e54;
-    --color-base2: #10372a;
-    --color-brand: #1a759f;
-    --color-brand2: #deff58;
+:root {
+    --color-body: #e6e6e6;
+    --color-heading: #ffffff;
+    --color-base: #1a1a1a;
+    --color-base2: #292929;
+    --color-brand: #3498db;
+    --color-brand2: #e74c3c;
+    --color-brand3: #3ce73c;
     --sidbar-width: 240px;
     --font-base: "Bai Jamjuree";
 }
 
-body{
+body {
     background-color: var(--color-base2);
-    color:var(--color-body);
+    color: var(--color-body);
     font-family: var(--font-base), sans-serif;
-
 }
 
-h1,h2,h3,h4,h5,h6{
+h1, h2, h3, h4, h5, h6 {
     color: var(--color-heading);
     font-weight: 700;
 }
 
-a{
+a {
     text-decoration: none;
-    color:var(--color-body);
+    color: var(--color-body);
     transition: all 0.4s ease;;
 }
 
-a:hover{
+a:hover {
     color: var(--color-brand);
 }
 
-img{
+img {
     width: 100%;
 }
 
-.text-brand{
+.text-brand {
     color: var(--color-brand);
 }
 
-.bg-base{
+.bg-base {
     background-color: var(--color-base);
-
 }
 
-.shadow-effect{
+.shadow-effect {
     transition: all 0.5s;
 }
 
-.shadow-effect:hover{
+.shadow-effect:hover {
     box-shadow: -6px 6px 0 0px var(--color-brand);
 }
 
-.iconbox{
+.iconbox {
     width: 60px;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 32px;
-    background-color: var(--color-brand);
-
+    background-color: var(--color-brand2);
 }
 
-.full-height{
+.full-height {
     min-height: 100vh;
     height: 100%;
     display: flex;
@@ -77,65 +75,64 @@ img{
 }
 
 /* navbar */
-.navbar{
+.navbar {
     background-color: var(--color-base);
 }
 
-.navbar .nav-link{
+.navbar .nav-link {
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
 }
 
-.navbar .nav-link:hover{
+.navbar .nav-link:hover {
     color: var(--color-brand);
 }
 
-.navbar .nav-link .active{
+.navbar .nav-link .active {
     color: var(--color-brand);
 }
 
-@media(min-width: 992px){
-    .navbar{
+@media (min-width: 992px) {
+    .navbar {
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgba(21, 88, 51, 0.8),rgba(3, 63, 71, 0.8)),url(../images/sidebar_image.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/sidebar_image.jpg);
         background-size: cover;
         background-position: center;
     }
 
     /* inside navbar-brand class have image */
-    .navbar-brand img{
-        border: 8px solid var(--color-brand);    
+    .navbar-brand img {
+        border: 8px solid var(--color-brand3);
     }
 
     /* CONTENT WRAPPER */
 
-    #content-wrapper{
+    #content-wrapper {
         padding-left: var(--sidbar-width);
     }
 }
 
 /* BTN */
 
-.btn{
+.btn {
     padding: 12px 28px;
     font-weight: 700;
-
 }
 
-.btn-brand{
+.btn-brand {
     background-color: var(--color-brand);
     border-color: var(--color-brand);
-
 }
 
 .btn-brand:hover,
-.btn-brand:focus{
-    background-color: var(--color-brand2);
+.btn-brand:focus {
+    background-color: var(--color-brand3);
     color: var(--color-base);
-    border-color: var(--color-brand2);
+    border-color: var(--color-brand3);
 }
+
 
 .link-custom{
     font-weight: 700;

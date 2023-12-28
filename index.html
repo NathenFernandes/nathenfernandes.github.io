@@ -8,6 +8,8 @@
 
     <!-- Importing external stylesheets for Bootstrap, AOS, and custom styles -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./assets/images/icon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/images/icon.ico" type="image/x-icon"> 
     <link rel="stylesheet" href="./assets/css/aos.css">
     <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -28,11 +30,11 @@
               <span class="h3 fw-bold d-block d-lg-none">
                   Nathen Fernandes
               </span>
-              <img src="./assets/images/nathenfernandes.png" class="d-none d-lg-block rounded-circle" alt="profilepic">
+              <img src="./assets/images/nathenfernandes.jpeg" class="d-none d-lg-block rounded-circle" alt="profilepic">
             </a>
 
           </a>
-
+          <br>
           <!-- Button to toggle the navigation menu on smaller screens -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -44,12 +46,15 @@
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#home">Home</a>
               </li>
+              <br>
               <li class="nav-item">
                 <a class="nav-link" href="#projects"> My Projects</a>
               </li>
+              <br>
               <li class="nav-item">
                 <a class="nav-link" href="#work">Work Experience</a>
               </li>
+              <br>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact Me</a>
               </li>
@@ -79,10 +84,92 @@
                 <h1 class="display-4 fw-bold" data-aos="fade-up"><span class="text-brand"> Computer Science Student </span> at Western University</h1>
                 <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">I am Nathen Fernandes, I am passionate about programming and discovering how software can have a positive impact on a global scale.</p>
                 <a href="#contact" class="btn btn-brand me-3">Contact Me</a>
-                <a href="./assets/images/nathenfernandes.png" download class="link-custom">Download Resume</a>
+                <a href="./assets/images/Nathenfernandesresume.pdf" download class="link-custom">Download Resume</a>
               </div>
             </div>
           </div>
+        </section>
+      
+        <section id="projects" class="full-height px-lg-5">
+          <div class="container">
+
+            <div class="row pb-4" data-aos="fade-up">
+              <div class="col-lg-8">
+                <h3 class="text-brand">MY PROJECTS</h3>
+              </div>
+            </div>
+      
+            <div class="row gy-4" data-aos="fade-up">
+              <div class="col-md-4">
+                <div class="card-custom rounded-4 bg-base shadow-effect">
+                  <div class="card-custom-image rounded-4">
+                    <img class="rounded-4" src="./assets/images/reviewcamp.png" alt="canoe" height="300" width="200">
+                  </div>
+
+                  <div class="card-custom-content p-4">
+                    <h4>Full Stack Application<i><h6></h6></i></h4>
+                    <p>• Frontend: Utilized HTML, CSS, and Bootstrap for responsive web design.</p>
+                    <p>• Backend: Implemented using Node.js and Express.js, with RESTful routing principles.</p>
+                    <p>• Database: Integrated MongoDB for data storage, with Mongoose for schema-based data modeling.</p>
+                    <p>• API Integration: Integrated Cloudinary API for image uploading and storage, and utilized Mapbox API for
+                      location-based features and interactive map visualizations.</p>
+                      <a href="https://reviewcamp.onrender.com/" target="_blank" class="link-custom">View Website</a>
+                      <br>
+                      <br>
+                      <p><i><b>NOTE: Server takes 45 seconds to boot upon inital request to the website.</b></i></p>
+                      </div>
+                  </div>   
+              </div>
+            
+
+              <div class="col-md-4">
+                <div class="card-custom rounded-4 bg-base shadow-effect">
+                  <div class="card-custom-image rounded-4">
+                    <img class="rounded-4" src="./assets/images/upload.png " alt="canoe" height="300" width="200">
+                  </div>
+
+                  <div class="card-custom-content p-4">
+                    <h4>Primate AI Classifier<i><h6></h6></i></h4>
+                    <p>Utilized the ResNet-18 architecture and fine-tuned it for the specific task.</p>
+                    <p>Integrated CUDA for GPU acceleration ensuring efficient model training. Achieved an impressive classification of 99.2% accuracy on the test dataset.</p>
+                    <p>Adopted the CrossEntropyLoss as the criterion and utilized the SGD optimizer with momentum.</p>
+                    <p>Developed a Flask server to receive image uploads from the web application, process the image and return the predicted class along with the confidence score.</p>
+                      <a href="https://github.com/NathenFernandes/flaskAiServer" class="link-custom">Code</a>
+                      </div>
+                  </div>
+                
+
+                
+              </div>
+
+
+              <div class="col-md-4">
+                <div class="card-custom rounded-4 bg-base shadow-effect">
+                  <div class="card-custom-image rounded-4">
+                    <img class="rounded-4" src="./assets/images/Avatar.png" alt="canoe" height="300" width="200">
+                  </div>
+
+                  <div class="card-custom-content p-4">
+                    <h4>JavaFX Animated Game<i><h6></h6></i></h4>
+                    <p>Dynamic UI: Leveraging JavaFX, the game interface offers fluid animations and intuitive player interactions along with attack and idle animations.                    </p>
+                    <p>Modular Design: Embraced modular programming practices implementing multiple classes and enriching my knowledge on object oriented programming.                    </p>
+                    <p>Efficient Algorithms: Implemented robust algorithms to handle complex game mechanics, ensuring quick response times and consistent gameplay.</p>
+                      <a href="https://github.com/NathenFernandes/probable-system" class="link-custom">Code</a>
+                      <br>
+                      <a href="https://youtu.be/TwSXrKuHHlk" target="_blank" class="link-custom">View Video</a>
+                      </div>
+                  </div>
+                
+
+                
+              </div>
+
+
+            </div>
+            
+
+          </div>
+
         </section>
         <section id="work" class="full-height px-lg-5"> 
           <div class="container">
@@ -98,138 +185,118 @@
               <div class="col-lg-4" data-aos="fade-up">
                 <div class="card-custom rounded-4 bg-base shadow-effect">
                   <div class="card-custom-image rounded-4">
+                    <img class="rounded-4" src="./assets/images/coding.jpeg" alt="canoe" height="300" width="200">
+                  </div>
+
+
+                  <div class="card-custom-content p-4">
+                    <h4>Software Engineer<i><h6>-Nymlogic</h6></i></h4>
+                    <p>Leveraged Python’s robust libraries, including Pandas and NumPy, to intricately process, transform, and cleanse
+                      intricate datasets, ensuring the highest quality and readiness for business applications.</p>
+                    <p>Assisted in the deployment and management of AWS Lambda functions, ensuring efficient and scalable
+                      solutions for client needs.</p>
+                    <p>Skills Developed: AWS, Python, Pandas, Matplotlib</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4" data-aos="fade-up">
+                <div class="card-custom rounded-4 bg-base shadow-effect">
+                  <div class="card-custom-image rounded-4">
+                    <img class="rounded-4" src="./assets/images/fusing.jpeg" alt="canoe" height="300" width="200">
+                  </div>
+
+                  <div class="card-custom-content p-4">
+                    <h4>Field Technician<i><h6>-Bell Canada</h6></i></h4>
+                    <p>Diagnosed and resolved complex technical issues with telecommunications equipment, applying a systematic
+                      approach</p>
+                    <p>Assisted in setting up and configuring local area networks <b>(LAN)</b> and wide area networks <b>(WAN)</b>, demonstrating
+                      a foundational understanding of network protocols and infrastructure.</p>
+                    <p>Utilized specialized diagnostic software tools to identify and resolve customer service issues, introducing a hands-on
+                      approach to software applications in real-world scenarios.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4" data-aos="fade-up">
+                <div class="card-custom rounded-4 bg-base shadow-effect">
+                  <div class="card-custom-image rounded-4">
                     <img class="rounded-4" src="./assets/images/western.jpg" alt="canoe" height="300" width="200">
                   </div>
 
                   <div class="card-custom-content p-4">
-                    <h4>inventory Assistant</h4>
-                    <p>From September 2021 - May 2022 I worked the campus's largest technological facility managing inventory, service orders as well as adjusting values in the database more specifically Microsoft access as well as Orbit.</p>
-                    <p>Would often work at the front desk and help students and staff locate the necessary technological parts and sign them in following the covid protocols. </p>
-                    <p>Microsoft Access/ ER Diagrams</p>
+                    <h4>Inventory Assistant<i><h6>-Western Technological Services</h6></i></h4>
+                    <p>Spearheaded inventory control and coordinated service orders for the campus’s largest technological facility,
+                      ensuring fluid and error-free operations.</p>
+                    <p>Demonstrated expertise in Microsoft Access, Excel, and Orbit databases. Utilized these platforms to
+                      vigilantly track, modify, and optimize inventory records, leading to marked enhancements in precision and
+                      operational efficiency.</p>
+                    <p>Skills Developed: Microsoft Access, ER Diagrams, Excel</p>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card-custom rounded-4 bg-base shadow-effect">
-                  <div class="card-custom-image rounded-4">
-                    <img class="rounded-4" src="./assets/images/celebration.jpeg" alt="canoe" height="300" width="300">
-                  </div>
-
-                  <div class="card-custom-content p-4">
-                    <h4>Progammer</h4>
-                    <p>From 2017 - April 2020 I worked as a programmer for the FC 7603 Robotics team as programming captain. </p>
-                    <p>During our first year our robot had gone on to win the Rookie Top Seed Award, and the Creativity Award as well as qualify for district event finalists.</p>
-                    <p>Soft Skills Developed: Communication Skills, Adapatability, Proactivness</p>
-                  </div>
-                </div>
-              </div>
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
-              <div class="card-custom rounded-4 bg-base shadow-effect">
-                <div class="card-custom-image rounded-4">
-                  <img class="rounded-4" src="./assets/images/walmart.jpeg" alt="canoe" height="300" width="300">
-                </div>
-
-                <div class="card-custom-content p-4">
-                  <h4>Fresh Food Store Associate</h4>
-                  <p>Examined grocery products to immediately remove expired or spoiled items, adhering to the “first in, first out” rule.</p>
-                  <p>Worked 35 hours a week and often switched positions to CAP 2 due to excess amounts of inventory needing to be unloaded and stocked in the backroom.</p>
-                  <p>Soft Skills Developed: Attentivness, Leadership, Collaborative Skills</p>
-                </div>
-              </div>
-            </div>
 
           </div>
 
           </div>
         </section>
-        <section id="projects" class="full-height px-lg-5">
-          <div class="container">
-            
-            <div class="row pb-4" data-aos="fade-up">
-              <div class="col-lg-8">
-                <h3 class="text-brand">MY PROJECTS</h3>
-
-              </div>
-            </div>
-      
-            <div class="row gy-4" data-aos="fade-up">
-              <div class="col-md-4">
-                <div class="project p-4 bg-base rounded-4 shadow-effect">
-                  <div class="iconbox rounded-3 mb-2">
-                    <i class="las la-gamepad"></i>
-                  </div>
-
-                  <h4>Avater Game</h4>
-                <p>Developed a executable Java game using the package JavaFX. This game had a multiple classes and features, including a sound manager, multiple characters. An AI bot to fight, interesting and unique abilities each requiring unique code. </p>
-                <p>Languages Utilized: Java</p>
-                <a href="https://github.com/NathenFernandes/probable-system" class="link-custom">Code</a>
-                <br>
-                <a href="https://youtu.be/TwSXrKuHHlk" target="_blank" class="link-custom">View Video</a>
-                </div>
-              </div>
-
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="project p-4 bg-base rounded-4 shadow-effect">
-                  <div class="iconbox rounded-3 mb-2">
-                    <i class="las la-mobile-alt"></i>
-                  </div>
-
-                  <h4>Android Application</h4>
-                <p>Developed an mobile infinite runner game using C++ called “escape the atmosphere” this application got nearly 100 downloads. </p>
-                <p>Kept track of coins and scores in the phones file system and the user could upgraded the character with ability’s that would help the user progress further</p>
-                <p>Languages Utilized: C++
-                <br>
-                <a href="https://nathen-fernandes.itch.io/escape-the-atmosphere" class="link-custom">Project</a>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-        </section>
-
 
 
 
         <section id="contact" class="full-height px-lg-5">
+
           <div class="container">
+
             <div class="row justify-content-center text-center" data-aos="fade-up">
+
               <div class="col-lg-8 pb-4">
+
                 <h6 class="text-brand">CONTACT ME</h6>
+
                 <h1>Thanks for viewing my page!</h1>
+
               </div>
 
               <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
                 
                 <form action="https://formsubmit.co/nathenfernandes03@gmail.com" method="POST" class="row g-lg-3 gy-3">
-                  <div class="form-group col-md-6">
-                    <input type="text" class="form-control" placeholder="Enter your name" required>
-                  </div>
 
                   <div class="form-group col-md-6">
-                    <input type="email" class="form-control" placeholder="Enter your email" required>
-                  </div>
 
+                    <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+
+                  </div>
+              
+                  <div class="form-group col-md-6">
+                
+                    <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+
+                  </div>
+                
                   <div class="form-group col-12">
-                    <input type="text" class="form-control" placeholder="Enter subject" required>
-                  </div>
 
+                    <input type="text" name="subject" class="form-control" placeholder="Enter subject" required>
+
+                  </div>
+                
                   <div class="form-group col-12">
-                    <textarea name="" rows="4" class="form-control" placeholder="Enter your message" required></textarea>
-                  </div>
 
+                    <textarea name="message" rows="4" class="form-control" placeholder="Enter your message" required></textarea>
+
+                  </div>
+                
                   <div class="form-group col-12 d-grid">
-                    <button class="btn btn-brand" type="submit">Send Message</button>
-                  </div>
 
+                    <button class="btn btn-brand" type="submit">Send Message</button>
+
+                  </div>
+                
                   <input type="hidden" name="_next" value="https://github.com/NathenFernandes"></input>
+
                 </form>
 
               </div>
 
-
+            
             </div>
           </div>
         </section>
@@ -243,9 +310,8 @@
               
               <div class="col-auto">
                 <div class="social-links">
-                  <a href="https://www.linkedin.com/in/nathen-fernandes-544105175/" target="_blank"><i class="lab la-linkedin"></i></a>
-                  <a href="https://github.com/NathenFernandes" target="_blank"><i class="lab la-github"></i></a>
-                  <a href="https://twitter.com/nathenfernandes" target="_blank"><i class="lab la-twitter"></i></a>
+                  <a href="https://www.linkedin.com/in/nathen-fernandes-544105175/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://github.com/NathenFernandes" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
               </div>
 
@@ -264,6 +330,7 @@
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
+    <script src="https://kit.fontawesome.com/61bb77c01d.js" crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
