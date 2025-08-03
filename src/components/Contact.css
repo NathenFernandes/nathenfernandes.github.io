@@ -1,0 +1,63 @@
+.contact {
+  padding: 80px 20px 120px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-content h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  text-transform: lowercase;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.contact-links a {
+  color: #666;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.contact-links a:hover {
+  color: #ffffff;
+}
+
+.contact-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.contact-links a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .contact-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .contact-links {
+    gap: 1.5rem;
+  }
+  
+  .contact-links a {
+    font-size: 0.9rem;
+  }
+}

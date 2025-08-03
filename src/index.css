@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000000;
+  min-height: 100vh;
+  color: #ffffff;
+  line-height: 1.4;
+  font-weight: 300;
+  position: relative;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: #2563eb;
+  color: white;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  33% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  66% {
+    transform: translateY(10px) translateX(-5px);
+  }
+}
+
+@keyframes floatMedium {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) translateX(15px) rotate(180deg);
+  }
+}
+
+@keyframes floatFast {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: translateY(15px) translateX(-10px);
+  }
+  75% {
+    transform: translateY(-10px) translateX(20px);
+  }
+}
+
+/* Animated background */
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.bg-dot {
+  position: absolute;
+  background: #666;
+  border-radius: 50%;
+  opacity: 1;
+  box-shadow: 0 0 10px rgba(102, 102, 102, 0.3);
+}
+
+.bg-dot:nth-child(1) {
+  width: 8px;
+  height: 8px;
+  top: 20%;
+  left: 10%;
+  animation: floatSlow 8s infinite ease-in-out;
+  background: #777;
+}
+
+.bg-dot:nth-child(2) {
+  width: 4px;
+  height: 4px;
+  top: 60%;
+  left: 20%;
+  animation: floatMedium 12s infinite ease-in-out 2s;
+  background: #555;
+}
+
+.bg-dot:nth-child(3) {
+  width: 12px;
+  height: 12px;
+  top: 30%;
+  left: 70%;
+  animation: floatFast 6s infinite ease-in-out 1s;
+  background: #888;
+}
+
+.bg-dot:nth-child(4) {
+  width: 6px;
+  height: 6px;
+  top: 80%;
+  left: 60%;
+  animation: floatSlow 10s infinite ease-in-out 3s;
+  background: #666;
+}
+
+.bg-dot:nth-child(5) {
+  width: 10px;
+  height: 10px;
+  top: 15%;
+  left: 85%;
+  animation: floatMedium 9s infinite ease-in-out 4s;
+  background: #777;
+}
+
+.bg-dot:nth-child(6) {
+  width: 5px;
+  height: 5px;
+  top: 70%;
+  left: 15%;
+  animation: floatFast 7s infinite ease-in-out 2s;
+  background: #555;
+}
+
+.bg-dot:nth-child(7) {
+  width: 9px;
+  height: 9px;
+  top: 45%;
+  left: 90%;
+  animation: floatSlow 11s infinite ease-in-out 1s;
+  background: #999;
+}
+
+.bg-dot:nth-child(8) {
+  width: 7px;
+  height: 7px;
+  top: 25%;
+  left: 40%;
+  animation: floatMedium 8s infinite ease-in-out 3s;
+  background: #666;
+}
+
+/* Glass morphism effect - updated for darker theme */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+/* Gradient text - updated for darker theme */
+.gradient-text {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+} 
